@@ -105,7 +105,7 @@ section img {
   color: white;
   font-size: 7.5vw;
   z-index: 9;
-  transform: translateY(50px);
+  transform: translateY(10px);
 }
 
 .btn { 
@@ -116,7 +116,7 @@ section img {
   border-radius: 20px;
   text-decoration: none;
   z-index: 9;
-  transform: translateY(200px);
+  transform: translateY(150px);
 }
 
 .first-plane {
