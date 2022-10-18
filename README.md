@@ -1,1 +1,1 @@
-# parrallx-scroll-effact
+# parrallax-scroll-effact
