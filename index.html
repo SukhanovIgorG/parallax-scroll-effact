@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css" />
+  <title>Paralax</title>
+</head>
+<body >
+  <header>
+    <p class="logo">logo</p>
+    <ul>
+      <li><a class="active" href="#">Главная</a></li>
+      <li><a href="#">Информация</a></li>
+      <li><a href="#">Портфолио</a></li>
+      <li><a href="#">Ссылки</a></li>
+    </ul>
+  </header>
+  <section>
+    <img class="stars" src="./img/stars.png" alt="">
+    <img class="moon" src="./img/moon.png" alt="">
+    <img class="second-plane" src="./img/second_plane.png" alt="">
+    <p class="text">Moon light</p>
+    <a href="#" class="btn">Explore</a>
+    <img class="first-plane" src="./img/first_plane.png" alt="">
+  </section>
+  <section class="sec">
+    <div></div>
+    <h2>Parallax scrolling effects</h2>
+    <p>Параллакс — это визуальный эффект, при котором элементы, расположенные ближе к зрителю, перемещаются быстрее элементов фона. Эффект параллакса создает ощущение глубины, перспективы и движения.</p>
+  </section>
+  <script>
+    const stars = document.querySelector('.stars');
+    const moon = document.querySelector('.moon');
+    const secondPlane = document.querySelector('.second-plane');
+    const text = document.querySelector('.text');
+    const btn = document.querySelector('.btn');
+    const firstPlane = document.querySelector('.first-plane');
+
+    window.addEventListener('scroll', function() {
+      let value = window.scrollY;
+      stars.style.left = value * .25 + 'px';
+      moon.style.top = value * 1.05 + 'px';
+      secondPlane.style.top = value * 0.5 + 'px';
+      text.style.marginRight = value * 4 + 'px';
+      text.style.marginTop = value * 1.5 + 'px';
+      btn.style.marginTop = value * 1.5 + 'px';
+      firstPlane.style.top = value * 0 + 'px';
+    })
+
+  </script>
+</body>
+</html>
