@@ -23,7 +23,7 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  height: 100px;
+  min-height: 100px;
   z-index: 1000;
 }
 
@@ -40,6 +40,13 @@ header ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+@media screen and (max-width: 720px) {
+  header ul {
+    display: none
+  }
+  
 }
 
 header ul li {
@@ -103,7 +110,7 @@ section img {
   right: -200px;
   white-space: nowrap;
   color: white;
-  font-size: 7.5vw;
+  font-size: 7.5vh;
   z-index: 9;
   transform: translateY(10px);
 }
