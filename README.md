@@ -1,4 +1,4 @@
-# parallax-scroll-effact
+# parallax-scroll-effect
 
 Демо - https://sukhanovigorg.github.io/parallax-scroll-effect/
 
